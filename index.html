@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ANAYA VIP 3D</title>
 
-<!-- 🔥 META PIXEL CODE -->
+<!-- 🔥 META PIXEL (ONLY NEW PIXEL) -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -16,15 +16,18 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '2464598923992029');
+// ✅ ONLY NEW PIXEL
+fbq('init', '2693505621048370');
+
+// ✅ PAGE VIEW TRACK
 fbq('track', 'PageView');
 </script>
 
 <noscript>
 <img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2464598923992029&ev=PageView&noscript=1"/>
+src="https://www.facebook.com/tr?id=2693505621048370&ev=PageView&noscript=1"/>
 </noscript>
-<!-- 🔥 END PIXEL -->
+<!-- 🔥 END META PIXEL -->
 
 <style>
 body {
@@ -123,16 +126,25 @@ body {
     <h2>ANAYA VIP 👑</h2>
     <p>💰 JOIN TELEGRAM 💰</p>
 
-    <button class="btn btn1" onclick="window.location.href='https://t.me/+bTishliCb7M4NWFl'">
+    <!-- ✅ BUTTON WITH TRACKING -->
+    <button class="btn btn1" onclick="joinNow()">
       JOIN TELEGRAM
     </button>
 
-    <button class="btn btn2" onclick="window.location.href='https://t.me/+bTishliCb7M4NWFl'">
+    <button class="btn btn2" onclick="joinNow()">
       SUBSCRIBE NOW
     </button>
 
   </div>
 </div>
+
+<!-- 🔥 CLICK TRACKING -->
+<script>
+function joinNow() {
+  fbq('track', 'Lead'); // ✅ Lead event
+  window.location.href = "https://t.me/+bTishliCb7M4NWFl";
+}
+</script>
 
 </body>
 </html>
