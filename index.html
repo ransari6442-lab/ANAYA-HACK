@@ -5,6 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yaduveer</title>
 
+<!-- ✅ META PIXEL CODE (HEAD ME) -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '2294816147708547');
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2294816147708547&ev=PageView&noscript=1"/>
+</noscript>
+
 <style>
 * {
   margin: 0;
@@ -149,7 +169,7 @@ h1 {
     Join the original channel for daily updates
   </div>
 
-  <!-- TELEGRAM API BUTTON -->
+  <!-- BUTTON -->
   <a href="#" class="btn" onclick="openTelegram()">
     🚀 Join Telegram Now
   </a>
@@ -167,6 +187,11 @@ h1 {
 function openTelegram() {
   var appLink = "tg://join?invite=bTishliCb7M4NWFl";
   var webLink = "https://t.me/+bTishliCb7M4NWFl";
+
+  // Track button click (Meta Pixel)
+  if (typeof fbq !== "undefined") {
+    fbq('track', 'Lead');
+  }
 
   window.location.href = appLink;
 
