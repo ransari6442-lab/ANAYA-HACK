@@ -3,146 +3,176 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ANAYA VIP 3D</title>
-
-<!-- 🔥 META PIXEL (ONLY NEW PIXEL) -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-
-// ✅ ONLY NEW PIXEL
-fbq('init', '2693505621048370');
-
-// ✅ PAGE VIEW TRACK
-fbq('track', 'PageView');
-</script>
-
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2693505621048370&ev=PageView&noscript=1"/>
-</noscript>
-<!-- 🔥 END META PIXEL -->
+<title>Yaduveer</title>
 
 <style>
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+}
+
+body {
+  background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
 }
 
-.container {
-  width: 100%;
-  padding: 15px;
-}
-
+/* CARD */
 .card {
-  width: 100%;
+  width: 90%;
   max-width: 350px;
-  margin: auto;
   padding: 25px;
-  border-radius: 25px;
-  background: rgba(255,255,255,0.25);
-  backdrop-filter: blur(20px);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  border-radius: 20px;
+  background: linear-gradient(145deg, #0d0d0d, #1a1a1a);
+  box-shadow: 
+    0 10px 30px rgba(255, 200, 0, 0.2),
+    inset 0 0 10px rgba(255,255,255,0.05);
   text-align: center;
+  transform: perspective(1000px) rotateX(5deg);
 }
 
-.profile-pic {
-  width: 130px;
-  height: 130px;
+/* PROFILE */
+.profile {
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
+  padding: 5px;
   margin: auto;
+  background: linear-gradient(135deg, gold, orange);
+  box-shadow: 0 0 25px rgba(255, 200, 0, 0.6);
   overflow: hidden;
-  box-shadow: 0 0 25px white, 0 0 50px #38bdf8;
-  border: 3px solid white;
 }
 
-.profile-pic img {
+.profile img {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
   object-fit: cover;
+  object-position: center;
 }
 
-.card h2 {
-  margin: 15px 0;
-  font-size: 22px;
-  font-weight: bold;
-  color: #0c4a6e;
+/* TEXT */
+h1 {
+  color: #fff;
+  margin: 15px 0 5px;
+  letter-spacing: 2px;
 }
 
-.card p {
-  font-weight: bold;
-  font-size: 15px;
+.sub {
+  color: #ffcc00;
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
+/* GOLD BUTTON */
 .btn {
   display: block;
-  width: 100%;
-  margin: 10px 0;
-  padding: 14px;
-  border: none;
-  border-radius: 15px;
-  font-size: 15px;
+  padding: 16px;
+  border-radius: 40px;
+  text-decoration: none;
   font-weight: bold;
-  cursor: pointer;
+  font-size: 16px;
+  color: #000;
+  background: linear-gradient(
+    135deg,
+    #fff6b7 0%,
+    #fdd835 25%,
+    #f9a825 50%,
+    #fdd835 75%,
+    #fff6b7 100%
+  );
+  box-shadow: 
+    0 6px 15px rgba(255, 215, 0, 0.5),
+    inset 0 2px 5px rgba(255,255,255,0.6),
+    inset 0 -3px 5px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.btn1 {
-  background: linear-gradient(45deg, #0284c7, #0369a1);
-  color: white;
+/* SHINE */
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.7),
+    transparent
+  );
+  transition: 0.6s;
 }
 
-.btn2 {
-  background: linear-gradient(45deg, #0ea5e9, #38bdf8);
-  color: black;
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn:hover {
+  transform: scale(1.05);
 }
 
 .btn:active {
-  transform: scale(0.95);
+  transform: scale(0.97);
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 15px;
+  color: #ccc;
+  font-size: 12px;
 }
 </style>
-
 </head>
 
 <body>
 
-<div class="container">
-  <div class="card">
-
-    <div class="profile-pic">
-      <img src="https://i.ibb.co/DgPJ407F/photo.jpg" alt="photo">
-    </div>
-
-    <h2>ANAYA VIP 👑</h2>
-    <p>💰 JOIN TELEGRAM 💰</p>
-
-    <!-- ✅ BUTTON WITH TRACKING -->
-    <button class="btn btn1" onclick="joinNow()">
-      JOIN TELEGRAM
-    </button>
-
-    <button class="btn btn2" onclick="joinNow()">
-      SUBSCRIBE NOW
-    </button>
-
+<div class="card">
+  
+  <!-- IMAGE -->
+  <div class="profile">
+    <img src="https://i.ibb.co/Q30PMR84/lo.webp" alt="profile">
   </div>
+
+  <!-- NAME -->
+  <h1>YADUVEER 🔥</h1>
+
+  <!-- TEXT -->
+  <div class="sub">
+    Join the original channel for daily updates
+  </div>
+
+  <!-- TELEGRAM API BUTTON -->
+  <a href="#" class="btn" onclick="openTelegram()">
+    🚀 Join Telegram Now
+  </a>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    ⭐ Trusted by 50,000+ members<br>
+    100% FREE | NO SPAM | INSTANT UPDATES
+  </div>
+
 </div>
 
-<!-- 🔥 CLICK TRACKING -->
+<!-- TELEGRAM SCRIPT -->
 <script>
-function joinNow() {
-  fbq('track', 'Lead'); // ✅ Lead event
-  window.location.href = "https://t.me/+bTishliCb7M4NWFl";
+function openTelegram() {
+  var appLink = "tg://join?invite=bTishliCb7M4NWFl";
+  var webLink = "https://t.me/+bTishliCb7M4NWFl";
+
+  window.location.href = appLink;
+
+  setTimeout(function () {
+    window.location.href = webLink;
+  }, 1000);
 }
 </script>
 
