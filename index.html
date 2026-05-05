@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ANAYA VIP</title>
 
-<!-- ✅ NEW META PIXEL -->
+<!-- ✅ META PIXEL -->
 <script>
 !function(f,b,e,v,n,t,s){
 if(f.fbq)return;n=f.fbq=function(){
@@ -18,7 +18,7 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)
 }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '1540866091092945'); 
+fbq('init', '1540866091092945');
 fbq('track', 'PageView');
 </script>
 
@@ -28,7 +28,6 @@ src="https://www.facebook.com/tr?id=1540866091092945&ev=PageView&noscript=1"/>
 </noscript>
 
 <style>
-/* SAME DESIGN */
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
 body{background:#000;display:flex;justify-content:center;align-items:center;height:100vh;}
 .card{width:90%;max-width:350px;padding:25px;border-radius:20px;
@@ -81,9 +80,10 @@ function openTelegram() {
   var appLink = "tg://join?invite=gC3ro1ZOowoyMDdl";
   var webLink = "https://t.me/+gC3ro1ZOowoyMDdl";
 
-  // Track Lead
+  // ✅ TRACK EVENTS
   if (typeof fbq !== "undefined") {
-    fbq('track', 'Lead');
+    fbq('track', 'Lead'); // standard event
+    fbq('trackCustom', 'Subscribe'); // custom subscriber event
   }
 
   window.location.href = appLink;
@@ -92,8 +92,6 @@ function openTelegram() {
     window.location.href = webLink;
   }, 1000);
 }
-
-// ❌ AUTO REDIRECT REMOVED
 </script>
 
 </body>
