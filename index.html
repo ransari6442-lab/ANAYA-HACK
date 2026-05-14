@@ -37,21 +37,22 @@ body{
   font-size:13px;
 }
 
-/* LOGO FULL SHOW (NO CUT, NO STRETCH) */
+/* LOGO FIX (NO BOX, NO BACKGROUND) */
 .banner{
-  display:flex;
-  justify-content:center;
+  text-align:center;
+  margin:10px 0;
 }
 
 .banner img{
-  width:95%;
-  max-width:360px;
-  height:80px;
-  object-fit:contain;   /* 👈 FULL LOGO SHOW */
-  margin:12px auto;
-  border-radius:10px;
-  border:2px solid rgba(255,0,0,0.4);
-  background:#111;      /* clean background for transparent logos */
+  width:92%;
+  max-width:340px;
+  height:auto;         /* 👈 no fixed box */
+  display:block;
+  margin:0 auto;
+  object-fit:contain;  /* full image visible */
+  border-radius:12px;
+  border:2px solid rgba(255,0,0,0.35);
+  background:none;     /* 👈 removes black/empty box */
 }
 
 /* TITLE */
@@ -120,13 +121,6 @@ h1 span{
   border:1px solid rgba(255,255,255,0.15);
   object-fit:cover;
 }
-
-/* MOBILE */
-@media(max-width:480px){
-  .banner img{
-    height:70px;
-  }
-}
 </style>
 
 </head>
@@ -137,7 +131,7 @@ h1 span{
 
   <div class="badge">★ INDIA'S #1 GAMING PLATFORM ★</div>
 
-  <!-- FULL LOGO -->
+  <!-- LOGO FIXED -->
   <div class="banner">
     <img src="https://i.ibb.co/JRPNQfFk/IMG-20260514-212432-496.png" alt="logo">
   </div>
