@@ -3,96 +3,157 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ANAYA VIP</title>
-
-<!-- ✅ META PIXEL -->
-<script>
-!function(f,b,e,v,n,t,s){
-if(f.fbq)return;n=f.fbq=function(){
-n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)
-};
-if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)
-}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-fbq('init', '1540866091092945');
-fbq('track', 'PageView');
-</script>
-
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1540866091092945&ev=PageView&noscript=1"/>
-</noscript>
+<title>IndianWin</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
-body{background:#000;display:flex;justify-content:center;align-items:center;height:100vh;}
-.card{width:90%;max-width:350px;padding:25px;border-radius:20px;
-background:linear-gradient(145deg,#0d0d0d,#1a1a1a);
-box-shadow:0 10px 30px rgba(255,200,0,0.2), inset 0 0 10px rgba(255,255,255,0.05);
-text-align:center;}
-.profile{width:110px;height:110px;border-radius:50%;padding:5px;margin:auto;
-background:linear-gradient(135deg,gold,orange);
-box-shadow:0 0 25px rgba(255,200,0,0.6);overflow:hidden;}
-.profile img{width:100%;height:100%;border-radius:50%;object-fit:cover;}
-h1{color:#fff;margin:15px 0 5px;}
-.sub{color:#ffcc00;font-size:14px;margin-bottom:20px;}
-.btn{display:block;padding:16px;border-radius:40px;text-decoration:none;
-font-weight:bold;font-size:16px;color:#000;
-background:linear-gradient(135deg,#fff6b7,#fdd835,#f9a825,#fdd835,#fff6b7);
-box-shadow:0 6px 15px rgba(255,215,0,0.5);
-transition:0.3s;}
-.btn:hover{transform:scale(1.05);}
-.footer{margin-top:15px;color:#ccc;font-size:12px;}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background: radial-gradient(circle at top, #2a0000, #0b0b0b 70%);
+  color:#fff;
+  display:flex;
+  justify-content:center;
+}
+
+.container{
+  width:100%;
+  max-width:420px;
+  padding:12px;
+}
+
+/* BADGE */
+.badge{
+  background:linear-gradient(90deg,#ff0000,#ff4d4d);
+  text-align:center;
+  padding:12px;
+  font-weight:800;
+  border-radius:40px;
+  margin:10px 0;
+}
+
+/* IMAGE */
+.banner img{
+  width:100%;
+  border-radius:16px;
+  border:2px solid rgba(255,0,0,0.4);
+  margin:12px 0;
+  display:block;
+}
+
+/* TITLE */
+h1{
+  text-align:center;
+  font-size:32px;
+  margin:10px 0;
+  font-weight:900;
+}
+
+h1 span{
+  color:#ff1a1a;
+  display:block;
+}
+
+/* TEXT */
+.sub{
+  text-align:center;
+  color:#ddd;
+  margin-bottom:15px;
+  font-size:14px;
+}
+
+/* BUTTON */
+.btn{
+  display:block;
+  text-align:center;
+  background:linear-gradient(180deg,#ff1a1a,#b30000);
+  padding:16px;
+  border-radius:14px;
+  color:#fff;
+  font-size:18px;
+  font-weight:800;
+  text-decoration:none;
+  margin:12px 0;
+}
+
+/* SMALL TEXT */
+.small{
+  text-align:center;
+  font-size:12px;
+  color:#aaa;
+}
+
+/* PROOF */
+.section-title{
+  text-align:center;
+  font-size:18px;
+  font-weight:800;
+  margin:15px 0 5px;
+}
+
+.proof{
+  display:flex;
+  gap:10px;
+}
+
+.proof img{
+  width:50%;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+/* MOBILE */
+@media(max-width:480px){
+  .proof{
+    flex-direction:column;
+  }
+  .proof img{
+    width:100%;
+  }
+}
 </style>
+
 </head>
 
 <body>
 
-<div class="card">
+<div class="container">
 
-<div class="profile">
-<img src="https://i.ibb.co/Q30PMR84/lo.webp">
+  <div class="badge">★ INDIA'S #1 GAMING PLATFORM ★</div>
+
+  <!-- MAIN IMAGE -->
+  <div class="banner">
+    <img src="https://i.ibb.co/JRPNQfFk/IMG-20260514-212432-496.png" alt="main banner">
+  </div>
+
+  <h1>WELCOME TO <span>INDIANWIN</span></h1>
+
+  <p class="sub">Join 25,000+ players winning big every day 🏆</p>
+
+  <!-- REGISTER BUTTON (LINK ADDED) -->
+  <a class="btn" href="https://indianwingame.online/#/register?invitationCode=848887739646" target="_blank">
+    REGISTER NOW →
+  </a>
+
+  <p class="small">🔒 Safe • Instant Access • 24/7 Support</p>
+
+  <div class="section-title">🛡 REAL WITHDRAWAL PROOF</div>
+
+  <div class="proof">
+    <img src="https://i.ibb.co/BKQVx0Ht/Screenshot-2026-05-12-15-32-02-34-40deb401b9ffe8e1df2f1cc5ba480b12-jpg.jpg" alt="proof1">
+    <img src="https://i.ibb.co/5XqzXMwX/Screenshot-2026-05-10-22-23-46-34-40deb401b9ffe8e1df2f1cc5ba480b12-jpg.jpg" alt="proof2">
+  </div>
+
+  <!-- BONUS BUTTON (LINK ADDED) -->
+  <a class="btn" href="https://indianwingame.online/#/register?invitationCode=848887739646" target="_blank">
+    CLAIM YOUR BONUS →
+  </a>
+
 </div>
-
-<h1>ANAYA VIP 💰</h1>
-
-<div class="sub">
-Join the original channel for daily updates
-</div>
-
-<a href="#" class="btn" onclick="openTelegram()">
-🚀 Join Telegram Now
-</a>
-
-<div class="footer">
-⭐ Trusted by 50,000+ members<br>
-100% FREE | NO SPAM | INSTANT UPDATES
-</div>
-
-</div>
-
-<script>
-function openTelegram() {
-  var appLink = "tg://join?invite=gC3ro1ZOowoyMDdl";
-  var webLink = "https://t.me/+gC3ro1ZOowoyMDdl";
-
-  // ✅ TRACK EVENTS
-  if (typeof fbq !== "undefined") {
-    fbq('track', 'Lead'); // standard event
-    fbq('trackCustom', 'Subscribe'); // custom subscriber event
-  }
-
-  window.location.href = appLink;
-
-  setTimeout(function () {
-    window.location.href = webLink;
-  }, 1000);
-}
-</script>
 
 </body>
 </html>
