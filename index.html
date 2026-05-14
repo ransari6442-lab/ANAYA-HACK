@@ -37,16 +37,21 @@ body{
   font-size:13px;
 }
 
-/* LOGO LONG + SLIM */
+/* LOGO FULL SHOW (NO CUT, NO STRETCH) */
+.banner{
+  display:flex;
+  justify-content:center;
+}
+
 .banner img{
   width:95%;
   max-width:360px;
-  height:65px;
+  height:80px;
+  object-fit:contain;   /* 👈 FULL LOGO SHOW */
   margin:12px auto;
-  display:block;
   border-radius:10px;
   border:2px solid rgba(255,0,0,0.4);
-  object-fit:cover;
+  background:#111;      /* clean background for transparent logos */
 }
 
 /* TITLE */
@@ -99,7 +104,7 @@ h1 span{
   margin:15px 0 10px;
 }
 
-/* PROOF SINGLE LINE */
+/* PROOF */
 .proof{
   display:flex;
   flex-wrap:nowrap;
@@ -119,10 +124,8 @@ h1 span{
 /* MOBILE */
 @media(max-width:480px){
   .banner img{
-    height:55px;
+    height:70px;
   }
-  h1{ font-size:26px; }
-  .btn{ font-size:16px; }
 }
 </style>
 
@@ -134,7 +137,7 @@ h1 span{
 
   <div class="badge">★ INDIA'S #1 GAMING PLATFORM ★</div>
 
-  <!-- LOGO -->
+  <!-- FULL LOGO -->
   <div class="banner">
     <img src="https://i.ibb.co/JRPNQfFk/IMG-20260514-212432-496.png" alt="logo">
   </div>
@@ -143,7 +146,6 @@ h1 span{
 
   <p class="sub">Join 25,000+ players winning big every day 🏆</p>
 
-  <!-- BUTTON 1 -->
   <a class="btn" href="https://indianwingame.online/#/register?invitationCode=848887739646" target="_blank">
     REGISTER NOW →
   </a>
@@ -152,13 +154,11 @@ h1 span{
 
   <div class="section-title">🛡 REAL WITHDRAWAL PROOF</div>
 
-  <!-- PROOF -->
   <div class="proof">
     <img src="https://i.ibb.co/BKQVx0Ht/Screenshot-2026-05-12-15-32-02-34-40deb401b9ffe8e1df2f1cc5ba480b12-jpg.jpg">
     <img src="https://i.ibb.co/5XqzXMwX/Screenshot-2026-05-10-22-23-46-34-40deb401b9ffe8e1df2f1cc5ba480b12-jpg.jpg">
   </div>
 
-  <!-- BUTTON 2 -->
   <a class="btn" href="https://indianwingame.online/#/register?invitationCode=848887739646" target="_blank">
     CLAIM YOUR BONUS →
   </a>
